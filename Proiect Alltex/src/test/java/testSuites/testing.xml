@@ -1,1 +1,13 @@
-package testSuites;
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="testing" verbose="1">
+    <test name="PositiveTest">
+        <classes>
+            <class name="test.SignInTest.SignInTest">
+            </class>
+            <class name="test.SignInTest.SignUpTest">
+            </class>
+        </classes>
+    </test>
+
+</suite>
