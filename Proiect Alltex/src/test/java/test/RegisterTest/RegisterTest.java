@@ -12,7 +12,7 @@ import static pages.BasePage.getBaseUrl;
 
 public class RegisterTest extends BaseTest {
     private static final Logger LOG = LoggerFactory.getLogger(RegisterTest.class);
-    private String newUrl = getBaseUrl() ;
+    private String newUrl = getBaseUrl();
 
     @Test
     public void register() {
@@ -24,7 +24,6 @@ public class RegisterTest extends BaseTest {
         String _email = "vasifi8610@duiter.com";
         String _telefon = "0752418185";
         String _parola = "123456";
-
 
 
         LOG.info("Check title");
@@ -57,10 +56,11 @@ public class RegisterTest extends BaseTest {
         LOG.info("Check the Therms and conditions Checkbox");
         registerPage.checkTermeniSiConditii();
 
-//        LOG.info("Click Inregistrare Button");
-//        registerPage.clickInregistrare1Button();
+        LOG.info("Go to footer");
+        registerPage.scrollToElement();
 
-
+        LOG.info("Click Inregistrare Button");
+        registerPage.clickInregistrare1Button();
 
 
     }

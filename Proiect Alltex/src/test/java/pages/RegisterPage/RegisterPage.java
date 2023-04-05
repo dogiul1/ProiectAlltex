@@ -1,6 +1,8 @@
 package pages.RegisterPage;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pages.BasePage;
@@ -21,6 +23,7 @@ public class RegisterPage extends BasePage {
     private By confirmaParola = By.xpath("//div/section/form/div/input[@label='Confirma parola']");
     private By termeniSiConditii = By.xpath("//span[@class='checkbox-control flex-none w-5 h-5 p-1 mr-2 border-gray-light border rounded-4px bg-white is-required']");
     private By inregistrareButton = By.xpath("//section/form/div[10]/button/span/span[@class='button-wrapper leading-20.8 p-12px block w-full inline-block -tracking-0.18']");
+    private By footer = By.xpath("//div[@class='mr-2 flex-none']");
 
 
 
@@ -84,6 +87,13 @@ public class RegisterPage extends BasePage {
     public void checkTermeniSiConditii() {
         LOG.info("Check the Therms and conditions Checkbox");
         driver.findElement(termeniSiConditii).click();
+    }
+
+    public void scrollToElement() {
+        WebElement scroll = driver.findElement(footer);
+        Actions action = new Actions(driver);
+        action.moveToElement(scroll);
+        action.perform();
     }
 
     public void clickInregistrare1Button(){

@@ -3,6 +3,9 @@ package tests;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import pages.BasePage;
+//import pages.NewsletterPage.NewsletterNoEmailPage;
+import pages.NewsletterPage.NewsletterNoEmailPage;
+import pages.NewsletterPage.NewsletterPage;
 import pages.RegisterPage.RegisterPage;
 import pages.SignInPage.SignInPage;
 
@@ -10,6 +13,8 @@ public class BaseTest {
 
     public SignInPage signInPage = SignInPage.getInstance();
     public RegisterPage registerPage = RegisterPage.getInstance();
+    public NewsletterPage newsletterPage = NewsletterPage.getInstance();
+    public NewsletterNoEmailPage newsletterNoEmailPage = NewsletterNoEmailPage.getInstance();
 
     @BeforeSuite
     public void init() {
