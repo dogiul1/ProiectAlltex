@@ -15,7 +15,7 @@ public class RegisterTest extends BaseTest {
     private String newUrl = getBaseUrl();
 
     @Test
-    public void register() {
+    public void register() throws InterruptedException {
 //        driver.get(newUrl);
 
         String _prenume = "Fratutiu";
@@ -31,6 +31,8 @@ public class RegisterTest extends BaseTest {
 
         LOG.info("Press Cont Button");
         registerPage.clickContButton();
+
+        Thread.sleep(100);
 
         LOG.info("Press Inregistrare Button");
         registerPage.clickInregistrareButton();

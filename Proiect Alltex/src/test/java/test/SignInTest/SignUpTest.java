@@ -11,7 +11,7 @@ import static pages.BasePage.getBaseUrl;
 
 public class SignUpTest extends BaseTest {
     private static final Logger LOG = LoggerFactory.getLogger(SignUpTest.class);
-    private String newUrl = getBaseUrl() + "Index.html";
+    private String newUrl = getBaseUrl();
 
     @Test
     public void signUp() {

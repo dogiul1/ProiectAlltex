@@ -8,6 +8,7 @@ import pages.NewsletterPage.NewsletterNoEmailPage;
 import pages.NewsletterPage.NewsletterPage;
 import pages.RegisterPage.RegisterPage;
 import pages.SignInPage.SignInPage;
+import pages.WishlistNoAccountPage.WishListNoAccountPage;
 
 public class BaseTest {
 
@@ -15,6 +16,8 @@ public class BaseTest {
     public RegisterPage registerPage = RegisterPage.getInstance();
     public NewsletterPage newsletterPage = NewsletterPage.getInstance();
     public NewsletterNoEmailPage newsletterNoEmailPage = NewsletterNoEmailPage.getInstance();
+    public WishListNoAccountPage wishListNoAccountPage = WishListNoAccountPage.getInstance();
+
 
     @BeforeSuite
     public void init() {
