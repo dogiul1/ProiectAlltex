@@ -32,5 +32,8 @@ public class WishListWithAccountTest extends tests.BaseTest {
 
         LOG.info("Scroll to element");
         wishListWithAccountPage.scrollToElement();
+
+//        LOG.info("Press The wishlist button");
+//        wishListWithAccountPage.pressTheWishListButton();
     }
 }
