@@ -3,9 +3,17 @@
 <suite name="testing" verbose="1">
     <test name="PositiveTest">
         <classes>
-            <class name="test.SignInTest.SignInTest">
+            <class name="test.RegisterTest.RegisterTest">
             </class>
-            <class name="test.SignInTest.SignUpTest">
+            <class name="test.NewsletterTest.NewsletterNoEmailTest">
+            </class>
+            <class name="test.NewsletterTest.NewsletterTest">
+            </class>
+            <class name="test.WishlistTest.WishListNoAccountTest">
+            </class>
+            <class name="test.WishlistTest.WishListWithAccountTest">
+            </class>
+            <class name="test.SignInTest.SignInTest">
             </class>
         </classes>
     </test>

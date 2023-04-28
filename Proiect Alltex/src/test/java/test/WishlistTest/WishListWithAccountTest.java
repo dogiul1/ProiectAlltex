@@ -6,17 +6,21 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.WishlistPage.WishListWithAccountPage;
 
+import static pages.BasePage.getBaseUrl;
+
 public class WishListWithAccountTest extends tests.BaseTest {
     private static final Logger LOG = LoggerFactory.getLogger(WishListWithAccountPage.class);
+    private String newUrl = getBaseUrl();
 
     @Test
     public void wishListWithAccountPage() {
+//        driver.get(newUrl);
 
         String _email = "dariusfrf@gmail.com";
         String _parola = "dariusica22";
 
-       LOG.info("Verify if title is displayed");
-       Assert.assertTrue(wishListWithAccountPage.isTitleDisplayed());
+        LOG.info("Verify if title is displayed");
+        Assert.assertTrue(wishListWithAccountPage.isTitleDisplayed());
 
         LOG.info("Press Cont Button");
         wishListWithAccountPage.clickContButton();

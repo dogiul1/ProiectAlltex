@@ -36,17 +36,17 @@ public class SignInPage extends BasePage {
 
     }
 
-    public void typeInEmail(String _email){
+    public void typeInEmail(String _email) {
         LOG.info("Fill the email Field");
         driver.findElement(email).sendKeys(_email);
     }
 
-    public void typeInPassword(String _parola){
+    public void typeInPassword(String _parola) {
         LOG.info("Fill the Password Field");
         driver.findElement(password).sendKeys(_parola);
     }
 
-    public void pressAutentificareButton(){
+    public void pressAutentificareButton() {
         LOG.info("Press the Autentificate Button");
         driver.findElement(autentificareButton).click();
     }

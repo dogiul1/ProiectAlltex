@@ -4,10 +4,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.SignInPage.SignInPage;
 import tests.BaseTest;
-
 import static pages.BasePage.driver;
+
 import static pages.BasePage.getBaseUrl;
 
 public class RegisterTest extends BaseTest {
@@ -16,7 +15,7 @@ public class RegisterTest extends BaseTest {
 
     @Test
     public void register() throws InterruptedException {
-//        driver.get(newUrl);
+//         driver.get(newUrl);
 
         String _prenume = "Fratutiu";
         String _nume = "Darius";
@@ -36,6 +35,8 @@ public class RegisterTest extends BaseTest {
 
         LOG.info("Press Inregistrare Button");
         registerPage.clickInregistrareButton();
+
+        Thread.sleep(1000);
 
         LOG.info("Fill the First Name Field");
         registerPage.typeInPrenume(_prenume);

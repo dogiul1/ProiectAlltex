@@ -47,16 +47,18 @@ public class NewsletterNoEmailPage extends BasePage {
         LOG.info("Press the Subscribe button");
         driver.findElement(subscribe).click();
     }
-    public String checkTheError(){
+
+    public String checkTheError() {
         return driver.findElement(error).getText();
     }
-//    public void scrolldown() {
+
+    //    public void scrolldown() {
 //        LOG.info("Scroll down to newsletter");
 //        JavascriptExecutor js = (JavascriptExecutor) driver;
 //        js.executeScript("window.scrollBy(0,2600)");
 //    }
-    public void scrollToElement(){
-        WebElement scroll= driver.findElement(footer);
+    public void scrollToElement() {
+        WebElement scroll = driver.findElement(footer);
         Actions action = new Actions(driver);
         action.moveToElement(scroll);
         action.perform();

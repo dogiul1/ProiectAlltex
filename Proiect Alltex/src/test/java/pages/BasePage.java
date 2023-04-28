@@ -12,7 +12,7 @@ public class BasePage {
 
     public static void setUp() {
         LOG.info("Start test");
-        System.setProperty("webdriver.chrome.driver", "C://Webdriver/chromedriver111.exe");
+        System.setProperty("webdriver.chrome.driver", "C://Webdriver/chromedriver112.exe");
         driver = new ChromeDriver();
         String url = "https://altex.ro";
         driver.get(url);

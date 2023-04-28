@@ -22,9 +22,9 @@ public class WishListNoAccountPage extends BasePage {
     }
 
     private By title = By.xpath("//a[@class='Header-logo block bg-no-repeat ']");
-    private By wishlistButton = By.xpath("//main/div[4]/div[2]/div/div[1]/div[1]/a/div[1]/span[1]/button//*[local-name()='svg']");
+    private By wishlistButton = By.xpath("//*[@id='oferte-zilnice']/div/div[1]/div[1]/a/div[1]/button[1]");
     private By eroare = By.xpath("//div[@class='fixed top-0 right-0 p-5 z-[3000] flex flex-col items-end']");
-    private By scrollElement = By.xpath("//*[@id='oferte-zilnice']/div/div[1]/div[1]/a/div[5]/button/span/span");
+    private By scrollElement = By.xpath("//*[@id='oferte-zilnice']/div/div[1]/div[1]/a/div[4]/button/span/span");
 
     public boolean isTitleDisplayed2() {
         LOG.info("Verify if title is displayed");
@@ -43,9 +43,11 @@ public class WishListNoAccountPage extends BasePage {
         action.perform();
     }
 
-    public String checkEroare() { return driver.findElement(eroare).getText(); }
-
-
+    public String checkEroare() {
+        return driver.findElement(eroare).getText();
     }
+
+
+}
 
 

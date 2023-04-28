@@ -5,12 +5,17 @@ import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static pages.BasePage.driver;
+import static pages.BasePage.getBaseUrl;
+
 
 public class NewsletterTest extends tests.BaseTest {
     private static final Logger LOG = LoggerFactory.getLogger(NewsletterTest.class);
+    private String newUrl = getBaseUrl();
 
     @Test
     public void newsletter() {
+//        driver.get(newUrl);
 
         String emailField = "dariusfrf@gmail.com";
 

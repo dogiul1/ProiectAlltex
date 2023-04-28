@@ -26,9 +26,6 @@ public class RegisterPage extends BasePage {
     private By footer = By.xpath("//div[@class='mr-2 flex-none']");
 
 
-
-
-
     private RegisterPage() {
     }
 
@@ -49,37 +46,37 @@ public class RegisterPage extends BasePage {
         driver.findElement(cont).click();
     }
 
-    public void clickInregistrareButton(){
+    public void clickInregistrareButton() {
         LOG.info("Press inregistare Button");
         driver.findElement(inregistrare).click();
     }
 
-    public void typeInPrenume(String _prenume){
+    public void typeInPrenume(String _prenume) {
         LOG.info("Fill the Prenume Field");
         driver.findElement(prenume).sendKeys(_prenume);
     }
 
-    public void typeInNume(String _nume){
+    public void typeInNume(String _nume) {
         LOG.info("Fill the Nume Field");
         driver.findElement(nume).sendKeys(_nume);
     }
 
-    public void typeInEmail(String _email){
+    public void typeInEmail(String _email) {
         LOG.info("Fill the Adress Field");
         driver.findElement(email).sendKeys(_email);
     }
 
-    public void typeInPhoneNumber(String _telefon){
+    public void typeInPhoneNumber(String _telefon) {
         LOG.info("Fill the Phone Field");
         driver.findElement(telefon).sendKeys(_telefon);
     }
 
-    public void typeInPassword(String _parola){
+    public void typeInPassword(String _parola) {
         LOG.info("Fill the Password Field");
         driver.findElement(parola).sendKeys(_parola);
     }
 
-    public void typeinConfirmPassword(String _parola){
+    public void typeinConfirmPassword(String _parola) {
         LOG.info("Fill the Confirm Password Field");
         driver.findElement(confirmaParola).sendKeys(_parola);
     }
@@ -96,13 +93,10 @@ public class RegisterPage extends BasePage {
         action.perform();
     }
 
-    public void clickInregistrare1Button(){
+    public void clickInregistrare1Button() {
         LOG.info("Click Inregistrare Button");
         driver.findElement(inregistrareButton).click();
     }
-
-
-
 
 
 }

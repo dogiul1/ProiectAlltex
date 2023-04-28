@@ -16,8 +16,8 @@ public class WishListWithAccountPage extends BasePage {
     private By email = By.xpath("//div/div/div[2]/div[2]/div/div/div/form/div[1]/input");
     private By password = By.xpath("//input[@name='password']");
     private By autentificareButton = By.xpath("//div[1]/div[1]/div/div/div[2]/div[2]/div/div/div/form/div[3]/button/span/span");
-    private By scrollElement = By.xpath("//*[@id='oferte-zilnice']/div/div[1]/div[1]/a/div[5]/button/span/span");
-    private By wishlistButton = By.xpath("//main/div[4]/div[2]/div/div[1]/div[1]/a/div[1]/span[1]/button//*[local-name()='svg']");
+    private By scrollElement = By.xpath("//*[@id='oferte-zilnice']/div/div[1]/div[1]/a/div[4]/button/span/span");
+    private By wishlistButton = By.xpath("//*[@id='oferte-zilnice']/div/div[1]/div[1]/a/div[1]/button[1]]");
 
 
     private WishListWithAccountPage() {

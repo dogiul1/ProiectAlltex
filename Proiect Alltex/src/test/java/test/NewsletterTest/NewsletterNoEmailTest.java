@@ -4,14 +4,18 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.NewsletterPage.NewsletterNoEmailPage;
+import static pages.BasePage.driver;
+
+import static pages.BasePage.getBaseUrl;
 
 
 public class NewsletterNoEmailTest extends tests.BaseTest {
     private static final Logger LOG = LoggerFactory.getLogger(NewsletterNoEmailTest.class);
+    private String newUrl = getBaseUrl();
 
     @Test
     public void newsletterNoEmail() {
+//        driver.get(newUrl);
 
         String initialTestError = "Acest camp este obligatoriu";
 

@@ -5,11 +5,16 @@ import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import static pages.BasePage.getBaseUrl;
+
 public class WishListNoAccountTest extends tests.BaseTest {
     private static final Logger LOG = LoggerFactory.getLogger(WishListNoAccountTest.class);
+    private String newUrl = getBaseUrl();
 
     @Test
     public void wishListNoAccountTest() {
+//        driver.get(newUrl);
+
 
         String initalError = "Trebuie sa fii autentificat pentru a adauga produsele in wishlist.";
 
@@ -25,7 +30,6 @@ public class WishListNoAccountTest extends tests.BaseTest {
 
         String currentTestError = wishListNoAccountPage.checkEroare();
         Assert.assertEquals(currentTestError, initalError);
-
 
 
     }
